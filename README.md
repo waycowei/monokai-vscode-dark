@@ -1,2 +1,3 @@
-# monokai-vscode-dark
-a monokai theme suit for vsode dark mode
+# Monokai Vscode Dark
+
+This is a monokai highlight theme which suit for vscode dark background, enjoy it.
