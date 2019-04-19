@@ -1,16 +1,20 @@
 {
     "tokenColors": [
         {
+            "scope": [
+                "meta.embedded",
+                "source.groovy.embedded"
+            ],
             "settings": {
                 "background": "#272822",
                 "foreground": "#F8F8F2"
-            },
+            }
         },
         {
             "name": "Comment",
             "scope": "comment",
             "settings": {
-                "foreground": "#008000"
+                "foreground": "#28a745"
             }
         },
         {
@@ -18,6 +22,25 @@
             "scope": "string",
             "settings": {
                 "foreground": "#E6DB74"
+            }
+        },
+        {
+            "name": "Template Definition",
+            "scope": [
+                "punctuation.definition.template-expression",
+                "punctuation.section.embedded"
+            ],
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "Reset JavaScript string interpolation expression",
+            "scope": [
+                "meta.template.expression"
+            ],
+            "settings": {
+                "foreground": "#F8F8F2"
             }
         },
         {
@@ -36,10 +59,7 @@
         },
         {
             "name": "User-defined constant",
-            "scope": [
-                "constant.character",
-                "constant.other"
-            ],
+            "scope": "constant.character, constant.other",
             "settings": {
                 "foreground": "#AE81FF"
             }
@@ -49,7 +69,7 @@
             "scope": "variable",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#F2F2F2"
+                "foreground": "#F8F8F2"
             }
         },
         {
@@ -77,7 +97,7 @@
         },
         {
             "name": "Class name",
-            "scope": "entity.name.class",
+            "scope": "entity.name.type, entity.name.class",
             "settings": {
                 "fontStyle": "underline",
                 "foreground": "#A6E22E"
@@ -141,10 +161,7 @@
         },
         {
             "name": "Library class/type",
-            "scope": [
-                "support.type",
-                "support.class"
-            ],
+            "scope": "support.type, support.class",
             "settings": {
                 "fontStyle": "italic",
                 "foreground": "#66D9EF"
@@ -154,8 +171,7 @@
             "name": "Library variable",
             "scope": "support.other.variable",
             "settings": {
-                "fontStyle": "",
-                "foreground": "#DDD"
+                "fontStyle": ""
             }
         },
         {
@@ -172,7 +188,129 @@
             "scope": "invalid.deprecated",
             "settings": {
                 "background": "#AE81FF",
-                "foreground": "#F811F8F0"
+                "foreground": "#F8F8F0"
+            }
+        },
+        {
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "settings": {
+                "foreground": "#CFCFC2"
+            }
+        },
+        {
+            "name": "diff.header",
+            "scope": "meta.diff, meta.diff.header",
+            "settings": {
+                "foreground": "#75715E"
+            }
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "settings": {
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "scope": "constant.numeric.line-number.find-in-files - match",
+            "settings": {
+                "foreground": "#AE81FFA0"
+            }
+        },
+        {
+            "scope": "entity.name.filename.find-in-files",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "name": "Markup Quote",
+            "scope": "markup.quote",
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "Markup Lists",
+            "scope": "markup.list",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "name": "Markup Styling",
+            "scope": "markup.bold, markup.italic",
+            "settings": {
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "Markup Inline",
+            "scope": "markup.inline.raw",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#FD971F"
+            }
+        },
+        {
+            "name": "Markup Headings",
+            "scope": "markup.heading",
+            "settings": {
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "Markup Setext Header",
+            "scope": "markup.heading.setext",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "scope": "token.info-token",
+            "settings": {
+                "foreground": "#6796e6"
+            }
+        },
+        {
+            "scope": "token.warn-token",
+            "settings": {
+                "foreground": "#cd9731"
+            }
+        },
+        {
+            "scope": "token.error-token",
+            "settings": {
+                "foreground": "#f44747"
+            }
+        },
+        {
+            "scope": "token.debug-token",
+            "settings": {
+                "foreground": "#b267e6"
+            }
+        },
+        {
+            "name": "this.self",
+            "scope": "variable.language",
+            "settings": {
+                "foreground": "#FD971F"
             }
         }
     ],
@@ -191,7 +329,7 @@
         "list.activeSelectionBackground": "#333",
         "list.inactiveSelectionBackground": "#333",
         "tab.inactiveBackground": "#222",
-        "editorGroup.dropBackground": "#333",
+        "editorGroup.dropBackground": "#3333336e",
         "editor.selectionHighlightBackground": "#444",
         "editor.hoverHighlightBackground": "#33333330",
         "editor.lineHighlightBackground": "#333",
@@ -201,9 +339,33 @@
         "statusBar.background": "#333",
         "statusBar.noFolderBackground": "#1e1f1c",
         "statusBar.debuggingBackground": "#444",
-        "panel.background": "#222",
+        "panel.background": "#1e1f1c",
         "editor.findMatchBackground": "#555",
-        "editor.findMatchHighlightBackground": "#444"
+        "editor.findMatchHighlightBackground": "#444",
+        "diffEditor.insertedTextBackground": "#66852880",
+        "diffEditor.removedTextBackground": "#90274a80",
+        "inputValidation.errorBackground": "#90274a",
+        "inputValidation.errorBorder": "#f92672",
+        "inputValidation.infoBackground": "#546190",
+        "inputValidation.infoBorder": "#819aff",
+        "inputValidation.warningBackground": "#848528",
+        "inputValidation.warningBorder": "#e2e22e",
+        "terminal.ansiBlack": "#333333",
+        "terminal.ansiBlue": "#6a7ec8",
+        "terminal.ansiBrightBlack": "#666666",
+        "terminal.ansiBrightBlue": "#819aff",
+        "terminal.ansiBrightCyan": "#66d9ef",
+        "terminal.ansiBrightGreen": "#a6e22e",
+        "terminal.ansiBrightMagenta": "#ae81ff",
+        "terminal.ansiBrightRed": "#f92672",
+        "terminal.ansiBrightWhite": "#f8f8f2",
+        "terminal.ansiBrightYellow": "#e2e22e",
+        "terminal.ansiCyan": "#56adbc",
+        "terminal.ansiGreen": "#86b42b",
+        "terminal.ansiMagenta": "#8c6bc8",
+        "terminal.ansiRed": "#c4265e",
+        "terminal.ansiWhite": "#e3e3dd",
+        "terminal.ansiYellow": "#b3b42b"
     },
     "name": "Monokai Dark"
 }
