@@ -9,6 +9,7 @@
         "monokai",
         "dark"
     ],
+    "icon": "assets/monokai-icon.png",
     "publisher": "waycowei",
     "engines": {
         "vscode": "^1.33.0"
@@ -31,5 +32,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/wkcole/monokai-vscode-dark"
-    }
+    },
+    "homepage": "https://github.com/wkcole/monokai-vscode-dark"
 }
