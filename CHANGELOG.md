@@ -17,3 +17,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.2.0]
 
 - Add theme icon
+
+## [1.3.0]
+
+- Add `Monokai Dark Visual Studio`

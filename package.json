@@ -1,13 +1,13 @@
 {
     "name": "monokai-vscode-dark",
-    "displayName": "Monokai VScode Dark",
+    "displayName": "Monokai VSCode Dark",
     "description": "a monokai theme suit for vsode dark mode",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "keywords": [
-        "vscode",
-        "color-theme",
         "monokai",
-        "dark"
+        "dark",
+        "vscode",
+        "color-theme"
     ],
     "icon": "assets/monokai-icon.png",
     "publisher": "waycowei",
@@ -22,7 +22,12 @@
             {
                 "label": "Monokai Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Monokai Dark-color-theme.json"
+                "path": "./themes/monokai-dark-theme.json"
+            },
+            {
+                "label": "Monokai Dark Visual Studio",
+                "uiTheme": "vs-dark",
+                "path": "./themes/monokai-dark-vs-theme.json"
             }
         ]
     },
