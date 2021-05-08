@@ -21,3 +21,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.3.0]
 
 - Add `Monokai Dark Visual Studio`
+
+## [1.4.0]
+
+- New Icon !!!
