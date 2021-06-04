@@ -2,7 +2,7 @@
     "name": "monokai-vscode-dark",
     "displayName": "Monokai VSCode Dark",
     "description": "a monokai theme suit for vsode dark mode",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "keywords": [
         "monokai",
         "dark",
@@ -32,11 +32,11 @@
         ]
     },
     "bugs": {
-        "url": "https://github.com/wkcole/monokai-vscode-dark/issues"
+        "url": "https://github.com/waycowei/monokai-vscode-dark/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/wkcole/monokai-vscode-dark"
+        "url": "https://github.com/waycowei/monokai-vscode-dark"
     },
-    "homepage": "https://github.com/wkcole/monokai-vscode-dark"
+    "homepage": "https://github.com/waycowei/monokai-vscode-dark"
 }

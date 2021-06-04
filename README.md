@@ -1,6 +1,6 @@
 # Monokai VSCode Dark
 
-![screenshot-1](./assets/monokai-icon.png)
+![screenshot-1](./assets/monokai-icon.png)  
 Monokai Themes for VSCode Dark Mode
 
 ## Install
